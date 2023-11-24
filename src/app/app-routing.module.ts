@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
+import { HomeComponent } from './shared/home/home.component';
 import { BuscarComponent } from './pages/buscar/buscar.component';
 import { PeliculaComponent } from './pages/pelicula/pelicula.component';
 

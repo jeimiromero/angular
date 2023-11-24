@@ -10,7 +10,7 @@
         "strict": true
        } ,
        "@schematics/angular:component": {
-        "style": "sass"
+        "style": "scss"
        }
       },
       "root": "",
@@ -31,10 +31,15 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/styles.sass"
+                        
+            "scripts": [
+              "./node_modules/hammerjs/hammer.min.js"
             ],
-            "scripts": []
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "node_modules"
+              ]
+            }
           },
           "configurations": {
             "production": {
@@ -93,10 +98,17 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/styles.sass"
+
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "./node_modules/hammerjs/hammer.min.js"
             ],
-            "scripts": []
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "node_modules"
+              ]
+            }
           }
         }
       }
