@@ -1,4 +1,12 @@
 $background-color: #999999;
+
+.body {
+  width: 100%;
+  height: 100%;
+  font-family: $font-family;
+  background: $background-color;
+
+}
 .carousel-item {
   height: 100vh;
   min-height: 300px;
@@ -29,13 +37,13 @@ $background-color: #999999;
   }
 }
 
-.carousel-inner::before {
+.carousel-inner {
   content: '';
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 30, 82, 0.327);
+  background: rgba(0, 30, 82, 0);
   z-index: 1;
 }
